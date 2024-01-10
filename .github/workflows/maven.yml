@@ -29,7 +29,10 @@ jobs:
         cache: maven
     - name: Build with Maven
       working-directory: ./pfm-core/
-      run: |
-        mvn -B package --file pom.xml
-        ls
+      run: mvn -B package --file pom.xml
+    - name: list files (1)
+      working-directory: ./pfm-core/
+      run: ls
+    - name: list files (2)
+      run: ls
 

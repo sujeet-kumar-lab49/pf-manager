@@ -28,5 +28,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      working-directory: ./pfm-core/
+      run: |
+        mvn -B package --file pom.xml
+        ls
 

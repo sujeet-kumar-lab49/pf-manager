@@ -8,6 +8,7 @@ public class PfmCoreApp {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PfmCoreApp.class, args);
+		System.out.println("PfmCoreApp is up");
 	}
 
 }
